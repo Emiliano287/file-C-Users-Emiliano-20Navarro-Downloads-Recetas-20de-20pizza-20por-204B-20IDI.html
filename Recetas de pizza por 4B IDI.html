@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Pizza Casera</title>
+    <style>
+        /* Reseteo de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general y fuente */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Diseño del contenedor de recetas */
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilo para cada receta (tarjetas) */
+        article {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Efecto hover en cada receta */
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo de la imagen */
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Títulos de las recetas */
+        h2 {
+            font-size: 1.8rem;
+            color: #FF5733;
+            margin-bottom: 10px;
+        }
+
+        /* Descripción */
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .ingredients, .steps {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .ingredients ul, .steps ol {
+            margin-left: 20px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #FF5733;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Estilo para dispositivos móviles */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            article {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>5 Recetas de Pizza Casera</h1>
+    </header>
+
+    <section>
+        <!-- Pizza Margherita -->
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.S-ndWHvWdQ9wwyuEgLtkIAHaFj?rs=1&pid=ImgDetMain" alt="Pizza Margherita">
+            <h2>Pizza Margherita</h2>
+            <p>Una pizza clásica italiana con una base de salsa de tomate, queso mozzarella y hojas de albahaca fresca.</p>
+
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 masa para pizza</li>
+                    <li>250 g de salsa de tomate</li>
+                    <li>200 g de queso mozzarella fresco</li>
+                    <li>Hojas de albahaca fresca</li>
+                    <li>Aceite de oliva virgen extra</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa para pizza en una superficie plana.</li>
+                    <li>Unta la salsa de tomate sobre la base de la pizza.</li>
+                    <li>Coloca las rodajas de mozzarella sobre la salsa.</li>
+                    <li>Hornea la pizza durante 10-12 minutos, hasta que la masa esté dorada y crujiente.</li>
+                    <li>Una vez fuera del horno, añade las hojas de albahaca fresca y un chorrito de aceite de oliva.</li>
+                    <li>¡Listo! Disfruta de tu pizza Margherita casera.</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Pizza Pepperoni -->
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.i_3qoKwYLLDFIym2X5DdKAHaE8?rs=1&pid=ImgDetMain" alt="Pizza Pepperoni">
+            <h2>Pizza Pepperoni</h2>
+            <p>Una pizza con una deliciosa combinación de salsa de tomate, queso mozzarella y rodajas de pepperoni.</p>
+
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 masa para pizza</li>
+                    <li>250 g de salsa de tomate</li>
+                    <li>200 g de queso mozzarella rallado</li>
+                    <li>100 g de rodajas de pepperoni</li>
+                    <li>Aceite de oliva</li>
+                    <li>Orégano seco al gusto</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa de pizza en una bandeja para hornear.</li>
+                    <li>Extiende la salsa de tomate uniformemente sobre la masa.</li>
+                    <li>Cubre con el queso mozzarella y las rodajas de pepperoni.</li>
+                    <li>Hornea durante 10-12 minutos, o hasta que la pizza esté dorada.</li>
+                    <li>Retira del horno y espolvorea con orégano antes de servir.</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Pizza Hawaiana -->
+        <article>
+            <img src="https://1.bp.blogspot.com/-4-4cs3QKgsM/XZzUIFGY5NI/AAAAAAAAARA/L8v1E9b9Ol4nenRlkvkAEkOeJlJmT_M3QCLcBGAsYHQ/s1600/pizza-hawaiana.jpg" alt="Pizza Hawaiana">
+            <h2>Pizza Hawaiana</h2>
+            <p>Una pizza con una combinación de jamón, piña y queso, que mezcla lo dulce y lo salado en un solo bocado.</p>
+
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 masa para pizza</li>
+                    <li>250 g de salsa de tomate</li>
+                    <li>200 g de queso mozzarella rallado</li>
+                    <li>150 g de jamón cocido en tiras</li>
+                    <li>100 g de piña en trozos</li>
+                    <li>Aceite de oliva y orégano</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa sobre la bandeja y cubre con la salsa de tomate.</li>
+                    <li>Coloca el queso mozzarella rallado, luego distribuye el jamón y los trozos de piña.</li>
+                    <li>Hornea durante 10-12 minutos o hasta que la masa esté dorada.</li>
+                    <li>Agrega un toque de orégano y un chorrito de aceite de oliva antes de servir.</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Pizza Vegetariana -->
+        <article>
+            <img src="https://th.bing.com/th/id/OIP.9ribAvQeqfsWt89D3VCm0QHaEK?rs=1&pid=ImgDetMain" alt="Pizza Vegetariana">
+            <h2>Pizza Vegetariana</h2>
+            <p>Ideal para los amantes de las verduras, esta pizza está llena de sabor con una variedad de vegetales frescos.</p>
+
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 masa para pizza</li>
+                    <li>250 g de salsa de tomate</li>
+                    <li>200 g de queso mozzarella rallado</li>
+                    <li>1 pimiento rojo, cortado en tiras</li>
+                    <li>1 calabacín, cortado en rodajas finas</li>
+                    <li>10 champiñones laminados</li>
+                    <li>Aceite de oliva, sal y pimienta</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa de pizza en la bandeja y unta con la salsa de tomate.</li>
+                    <li>Agrega el queso mozzarella rallado, luego coloca las verduras sobre la pizza.</li>
+                    <li>Hornea durante 12-15 minutos hasta que la masa esté dorada y las verduras cocidas.</li>
+                    <li>Sirve caliente, añadiendo un chorrito de aceite de oliva por encima.</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Pizza Barbacoa -->
+        <article>
+            <img src="https://th.bing.com/th/id/R.2249498fda24c27dfb2338f43a3593f0?rik=AbCBQaOTwRHxnQ&pid=ImgRaw&r=0" alt="Pizza Barbacoa">
+            <h2>Pizza Barbacoa</h2>
+            <p>Una pizza con salsa barbacoa, pollo tierno y cebolla caramelizada, ideal para una experiencia diferente.</p>
+
+            <div class="ingredients">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 masa para pizza</li>
+                    <li>250 g de salsa barbacoa</li>
+                    <li>200 g de pollo cocido y desmenuzado</li>
+                    <li>1 cebolla morada, caramelizada</li>
+                    <li>200 g de queso mozzarella rallado</li>
+                    <li>Un poco de cilantro fresco</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa de pizza sobre la bandeja y cubre con salsa barbacoa.</li>
+                    <li>Agrega el pollo desmenuzado, la cebolla caramelizada y el queso mozzarella.</li>
+                    <li>Hornea durante 10-12 minutos hasta que la pizza esté dorada y el queso derretido.</li>
+                    <li>Decora con cilantro fresco antes de servir.</li>
+                </ol>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Recetas de Pizza Casera. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
